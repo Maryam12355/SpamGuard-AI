@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F4F6FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SpamGuard AI"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#263A70"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI Spam Message Detection"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/edtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Enter your message here..."
+        android:gravity="top"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:background="#FFFFFF"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/btnAnalyze"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Analyze Message"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Clear"/>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your result will appear here"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="#555555"/>
+
+</LinearLayout>

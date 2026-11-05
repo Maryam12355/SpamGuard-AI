@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F3F5FF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MY COUNTER"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#28366F"
+        android:layout_marginBottom="35dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR COUNT"
+        android:textSize="18sp"
+        android:textColor="#777777"/>
+
+    <TextView
+        android:id="@+id/txtCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:textColor="#28366F"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/btnDecrease"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:text="−"
+            android:textSize="30sp"
+            android:backgroundTint="#5268D9"/>
+
+        <Button
+            android:id="@+id/btnIncrease"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            android:text="+"
+            android:textSize="30sp"
+            android:backgroundTint="#5268D9"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="RESET"
+        android:textSize="16sp"
+        android:backgroundTint="#28366F"/>
+
+</LinearLayout>
